@@ -1,0 +1,130 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+.action-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    border: 2px solid #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+    width: 150px;
+    height: 150px;
+}
+
+.action-button img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.action-button:hover {
+    background-color: #e0e0e0;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .action-button {
+        width: 120px;
+        height: 120px;
+    }
+
+    .action-button img {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+@media (max-width: 480px) {
+    .action-button {
+        width: 100px;
+        height: 100px;
+        padding: 15px;
+    }
+
+    .action-button img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .button-container {
+        gap: 15px;
+    }
+}
+
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #000000;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(248, 246, 246, 0.1);
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+input, select, textarea {
+    padding: 10px;
+    border: 1px solid #000000;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: #000000;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+}
+
+
