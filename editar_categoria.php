@@ -94,6 +94,7 @@ if (isset($_GET['id'])) {
     </form>
 
 </body>
+<br><br><br>
 <footer>
         <p>&copy; 2024 Sabina Textil y Arte</p>
     </footer>

@@ -32,7 +32,7 @@ if (!isset($_SESSION['nombreUsuario']) || $_SESSION['idrol'] != 2) {
 
     <?php
     $buttons = [
-        ['img' => 'Icons/Articulo.png', 'alt' => 'Artículo', 'label' => 'Artículo', 'link' => 'nuevo_articulo.php'],
+        ['img' => 'Icons/Articulo.png', 'alt' => 'Artículo', 'label' => 'Artículo', 'link' => 'articulo.php'],
         ['img' => 'Icons/categoria.png', 'alt' => 'Categoría', 'label' => 'Categoría', 'link' => 'categoria.php'],
         ['img' => 'Icons/Envio.png', 'alt' => 'Envíos', 'label' => 'Envíos', 'link' => 'envios.php'],
         ['img' => 'Icons/Ventas.png', 'alt' => 'Ventas', 'label' => 'Ventas', 'link' => 'ventas.php'],
