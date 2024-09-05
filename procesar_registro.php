@@ -30,7 +30,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $stmt->bind_param("sssssss", $nombreUsuario, $hashed_password, $nombre, $apellidoMat, $apellidoPat, $telefono, $email);
 
         if ($stmt->execute()) {
-            echo 'Registro exitoso. <a href="login.php">Inicia sesión</a>.';
+            // Mostrar alerta de registro exitoso y redirigir automáticamente al login
+            echo '<script type="text/javascript">
+                    alert("Registro exitoso");
+                    window.location.href = "login.php";
+                  </script>';
         } else {
             echo 'Error al registrar el usuario: ' . $stmt->error;
         }

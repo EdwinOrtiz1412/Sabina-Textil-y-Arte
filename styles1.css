@@ -156,3 +156,91 @@ form input:required:valid {
     }
 }
 
+/* Estilos para el menú lateral izquierdo */
+.menu-lateral {
+    width: 40px; /* Ancho reducido cuando está oculto */
+    background-color: #f4f4f4;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    overflow-y: auto;
+    transition: width 0.3s ease; /* Transición suave */
+}
+
+.menu-lateral:hover {
+    width: 200px; /* Ancho completo cuando se despliega */
+}
+
+.menu-lateral ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-lateral ul li {
+    margin: 20px 0;
+    white-space: nowrap; /* Evita el salto de línea */
+    overflow: hidden;
+}
+
+.menu-lateral ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    display: block;
+    padding: 10px;
+}
+
+.menu-lateral ul li a:hover {
+    background-color: #ddd;
+    padding-left: 10px;
+}
+
+main {
+    margin-left: 60px; /* Espacio cuando el menú está oculto */
+    padding: 20px;
+    flex: 1;
+    transition: margin-left 0.3s ease; /* Transición suave */
+}
+
+.menu-lateral:hover + main {
+    margin-left: 220px; /* Espacio cuando el menú está desplegado */
+}
+
+.menu-lateral ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #f4f4f4; /* Color de fondo para los enlaces */
+}
+
+.menu-lateral ul li a img {
+    width: 24px; /* Ajusta el ancho de la imagen */
+    height: auto; /* Mantiene la proporción de la imagen */
+    margin-right: 10px; /* Espacio entre la imagen y el texto */
+}
+
+.menu-lateral ul li a:hover {
+    background-color: #ddd;
+    padding-left: 10px;
+}
+
+@media (max-width: 768px) {
+    .menu-lateral ul li a img {
+        width: 20px; /* Tamaño reducido en pantallas más pequeñas */
+    }
+}
+
+@media (max-width: 480px) {
+    .menu-lateral ul li a img {
+        width: 18px; /* Tamaño aún más reducido en pantallas muy pequeñas */
+    }
+}
+
+
+
+
