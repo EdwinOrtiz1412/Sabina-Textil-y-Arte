@@ -38,7 +38,9 @@ if (!isset($_SESSION['nombreUsuario']) || $_SESSION['idrol'] != 2) {
         ['img' => 'Icons/Ventas.png', 'alt' => 'Ventas', 'label' => 'Ventas', 'link' => 'ventas.php'],
         ['img' => 'Icons/Reporte General.png', 'alt' => 'Reporte General', 'label' => 'Reporte General', 'link' => 'reporte_general.php'],
         ['img' => 'Icons/existencias.png', 'alt' => 'Existencias', 'label' => 'Existencias', 'link' => 'existencia.php'],
-        ['img' => 'Icons/talla.png', 'alt' => 'Tallas', 'label' => 'Tallas', 'link' => 'tallas.php']
+        ['img' => 'Icons/talla.png', 'alt' => 'Tallas', 'label' => 'Tallas', 'link' => 'tallas.php'],
+        ['img' => 'Icons/inventario.png', 'alt' => 'Inventario', 'label' => 'Invenario', 'link' => 'inventario.php']
+
 
 
     ];

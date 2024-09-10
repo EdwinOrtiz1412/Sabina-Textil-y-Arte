@@ -139,7 +139,8 @@ button:hover {
 }
 
 .table-tallas thead {
-    background-color: #f4f4f4;
+    background-color: #4CAF50;
+    color: white;
 }
 
 .table-tallas th, .table-tallas td {
@@ -223,3 +224,80 @@ button:hover {
         border-bottom: 0;
     }
 }
+
+/* Estilos específicos para la página de inventario */
+.table-inventario {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table-inventario th, .table-inventario td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.table-inventario th {
+    background-color: #f4f4f4;
+}
+
+.table-inventario img {
+    max-width: 100px;
+    height: auto;
+}
+
+.search-bar {
+    margin-bottom: 20px;
+}
+
+.pagination {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.pagination a {
+    margin: 0 5px;
+    text-decoration: none;
+    color: #007bff;
+}
+
+.pagination span {
+    margin: 0 5px;
+}
+
+@media (max-width: 768px) {
+    .table-inventario td, .table-inventario th {
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .table-inventario thead {
+        display: none;
+    }
+
+    .table-inventario tr {
+        margin-bottom: 10px;
+        display: block;
+        border: 1px solid #ddd;
+    }
+
+    .table-inventario td {
+        position: relative;
+        padding-left: 50%;
+        text-align: right;
+        white-space: nowrap;
+    }
+
+    .table-inventario td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 0;
+        width: 50%;
+        padding-left: 10px;
+        font-weight: bold;
+        text-align: left;
+        white-space: nowrap;
+    }
+}
+
