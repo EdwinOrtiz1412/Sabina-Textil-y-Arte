@@ -1,0 +1,309 @@
+/* Contenedor de las categorías */
+.categorias {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Botón de categoría */
+.categoria-boton {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    border: none;
+    background-color: #f4f4f4;
+    cursor: pointer;
+    text-align: center;
+    width: 100px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.categoria-boton img {
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.categoria-boton:hover {
+    background-color: #00a859;
+    color: white;
+    transform: scale(1.05); /* Pequeño zoom al pasar el cursor */
+}
+
+/* Media queries para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .categorias {
+        flex-wrap: nowrap; /* Evitar que los botones se apilen verticalmente */
+        overflow-x: auto; /* Añadir scroll horizontal si es necesario */
+        justify-content: flex-start; /* Alinear los botones al principio */
+    }
+
+    .categoria-boton {
+        width: 120px; /* Ajustar el tamaño del botón */
+        margin-right: 10px; /* Espacio entre los botones */
+    }
+
+    .categoria-boton img {
+        width: 80px;
+        height: 80px;
+    }
+}
+
+@media (max-width: 480px) {
+    .categorias {
+        flex-wrap: nowrap; /* No apilar en vertical */
+        overflow-x: auto; /* Scroll horizontal para móviles */
+        justify-content: flex-start; /* Alinear los botones al principio */
+    }
+
+    .categoria-boton {
+        width: 100%; /* Los botones ocupan todo el ancho */
+        max-width: 150px; /* Tamaño máximo para móviles */
+        margin-right: 10px; /* Espacio entre botones */
+    }
+
+    .categoria-boton img {
+        width: 100%; /* Ajustar tamaño de imagen */
+        height: 100px;
+    }
+}
+
+/* Contenedor de los artículos */
+.articulos {
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.articulos-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.articulo-boton {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 200px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.articulo-boton:hover {
+    transform: scale(1.05);
+}
+
+.articulo-imagen {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.articulo-info {
+    margin-top: 10px;
+}
+
+.articulo-info h3 {
+    font-size: 1.2em;
+    margin: 0;
+}
+
+.articulo-info p {
+    margin: 5px 0;
+}
+
+/* Media queries para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .articulo-boton {
+        width: 150px;
+    }
+
+    .articulo-imagen {
+        height: 120px;
+    }
+}
+
+@media (max-width: 480px) {
+    .articulos-container {
+        display: grid; /* Cambia a grid para controlar las filas */
+        grid-template-columns: repeat(2, 1fr); /* Muestra dos artículos por fila */
+        gap: 10px; /* Espacio entre artículos */
+    }
+
+    .articulo-boton {
+        width: 90%; /* Ajusta el ancho a la columna del grid */
+    }
+
+    .articulo-imagen {
+        height: 100px;
+    }
+}
+
+/* Contenedor de recomendaciones */
+.recomendaciones {
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.recomendaciones-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.articulo-boton { /* Usa el mismo estilo que para los artículos */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 200px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.articulo-boton:hover { /* Estilo del hover */
+    transform: scale(1.05);
+}
+
+.articulo-imagen { /* Imagen de los artículos/recomendaciones */
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.articulo-info { /* Información del artículo */
+    margin-top: 10px;
+}
+
+.articulo-info h3 { /* Título del artículo */
+    font-size: 1.2em;
+    margin: 0;
+}
+
+.articulo-info p { /* Precio del artículo */
+    margin: 5px 0;
+}
+
+/* Media queries para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .articulo-boton {
+        width: 150px;
+    }
+
+    .articulo-imagen {
+        height: 120px;
+    }
+}
+
+@media (max-width: 480px) {
+    .recomendaciones-container {
+        display: grid; /* Cambia a grid para controlar las filas */
+        grid-template-columns: repeat(2, 1fr); /* Muestra dos artículos por fila */
+        gap: 10px; /* Espacio entre artículos */
+    }
+
+    .articulo-boton {
+        width: 90%; /* Ajusta el ancho a la columna del grid */
+    }
+
+    .articulo-imagen {
+        height: 100px;
+    }
+}
+
+/* Estilos para la sección de Artículos Nuevos */
+.nuevos {
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.nuevos-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.articulo-boton {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 200px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.articulo-boton:hover {
+    transform: scale(1.05);
+}
+
+.articulo-imagen {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.articulo-info {
+    margin-top: 10px;
+}
+
+.articulo-info h3 {
+    font-size: 1.2em;
+    margin: 0;
+}
+
+.articulo-info p {
+    margin: 5px 0;
+}
+
+/* Media queries para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .articulo-boton {
+        width: 150px;
+    }
+
+    .articulo-imagen {
+        height: 120px;
+    }
+}
+
+@media (max-width: 480px) {
+    .nuevos-container {
+        display: grid; /* Cambia a grid para controlar las filas */
+        grid-template-columns: repeat(2, 1fr); /* Muestra dos artículos por fila */
+        gap: 10px; /* Espacio entre artículos */
+    }
+
+    .articulo-boton {
+        width: 90%; /* Ajusta el ancho a la columna del grid */
+    }
+
+    .articulo-imagen {
+        height: 100px;
+    }
+}
+
+

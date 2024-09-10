@@ -90,7 +90,7 @@ if (!$resultado) {
             }
         }
     </script>
-</body>
+</body> <br><br><br><br>
 <footer>
         <p>&copy; 2024 Sabina Textil y Arte</p>
     </footer>

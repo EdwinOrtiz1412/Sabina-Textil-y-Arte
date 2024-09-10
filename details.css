@@ -1,0 +1,119 @@
+/* Estilos para la sección de detalle del artículo */
+.titulo_articulo{
+    font-size: 2.5em; /* Tamaño de fuente más grande */
+    font-weight: bold;
+    text-align: center; /* Centra el texto horizontalmente */
+    margin: 20px 0; /* Espaciado superior e inferior */
+    color: #333; /* Color del texto */
+}
+.detalle-articulo {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.detalle-articulo h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.detalle-articulo img.articulo-imagen {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.detalle-articulo p {
+    font-size: 1.5em;
+    margin-top: 10px;
+}
+
+.detalle-articulo a {
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 1em;
+    color: #007bff;
+    text-decoration: none;
+}
+
+/* Estilos responsivos para pantallas grandes */
+@media (min-width: 768px) {
+    .detalle-articulo {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: left;
+    }
+
+    .detalle-articulo img.articulo-imagen {
+        max-width: 50%;
+        margin-right: 20px;
+    }
+
+    .detalle-articulo p {
+        font-size: 1.25em;
+    }
+}
+
+/* Estilos responsivos para dispositivos móviles */
+@media (max-width: 767px) {
+    .detalle-articulo {
+        text-align: center;
+    }
+
+    .detalle-articulo img.articulo-imagen {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+/*Estilos de los botones de las tallas */
+.tallas {
+    margin: 20px 0;
+}
+
+.talla-btn {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.talla-btn.disponible {
+    color: #333;
+}
+
+.talla-btn.no-disponible {
+    color: #999;
+    cursor: not-allowed;
+}
+
+.talla-btn.seleccionado {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.comprar-btn {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.comprar-btn:hover {
+    background-color: #0056b3;
+}
+
+.comprar-btn:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
